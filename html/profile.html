@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profill</title>
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <div class="container">
+        <div class="profile-section" id="profileSection">
+            <h1>Profile</h1>
+            <p><strong>User name:</strong> <span id="displayProfileUsername"></span></p>
+            <p><strong>Phone number:</strong> <span id="displayProfilePhone"></span></p>
+            <p><strong>Address:</strong> <span id="displayProfileAddress"></span></p>
+            <button id="updateButton" onclick="showUpdateForm()">Update Information</button>
+        </div>
+
+        <div class="update-form hidden" id="updateForm">
+            <form id="profileUpdateForm">
+                <h1>Update Profile</h1>
+                <div class="form-row">
+                    <label for="updateProfileUsername">New Username</label>
+                    <input type="text" id="updateProfileUsername" placeholder="New Username" required>
+                </div>
+                <div class="form-row">
+                    <label for="updateProfilePhone">New Phone Number</label>
+                    <input type="tel" id="updateProfilePhone" placeholder="New Phone Number" required>
+                </div>
+                <div class="form-row">
+                    <label for="updateProfileAddress">New Address</label>
+                    <input type="text" id="updateProfileAddress" placeholder="New Address" required>
+                </div>
+                <div class="form-row">
+                    <button id="saveButton" type="button" onclick="updateProfile()">Save</button>
+                    <button id="cancelButton" type="button" onclick="saveUpdatedProfile()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/js/profile.js"></script>
+    <script src="/js/nav.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border:none ;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .3s linear;
+
+}
+
+html{
+    font-size: 62%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 96px;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    
+    min-height: 100vh;
+    background: url('/image/Hug\ Branding\ \(1\).jpeg');
+    background-repeat: no-repeat;  
+    background-size: cover;       
+    background-position: center;
+}
+
+
+.home .btn{
+    align-items: center;
+    background: transparent;
+    border: 5px solid #f3b9e2;
+    border-radius: 10px;
+    width: 400px;
+    height: 50px;
+    margin-left: 400px;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.home .btn:hover{
+    font-size: x-small;
+    background: #f3b9e2;
+}
+
